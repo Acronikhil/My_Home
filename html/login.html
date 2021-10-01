@@ -60,7 +60,13 @@
         overflow: hidden;
         background-image: linear-gradient(to top right, #f9a743, #f9db5f);
       }
-      @media screen and (max-height: 500px) {
+      @media screen and (min-width: 700px) {
+        .center {
+          transition: transform 0.5s;
+          transform: translate(-50%, -50%) scale(2.3);
+        }
+      }
+      @media screen and (max-width: 700px) {
         .center {
           transition: transform 0.5s;
           transform: translate(-50%, -50%) scale(0.8);
